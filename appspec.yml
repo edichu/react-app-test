@@ -4,8 +4,16 @@ files:
   - source: /
     destination: /
 hooks:
-  AfterInstall:
+  BeforeInstall:
+    - location: scripts/npm-before-install.sh
+      runas: root
+      timeout: 3000
+  Install:
     - location: scripts/npm-install.sh
+      runas: root
+      timeout: 3000
+  AfterInstall:
+    - location: scripts/npm-after-install.sh
       runas: root
       timeout: 3000
   ApplicationStart:
