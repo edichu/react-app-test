@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /
+    destination: /home/ec2-user/react-app-test/
 hooks:
   BeforeInstall:
     - location: scripts/npm-before-install.sh
