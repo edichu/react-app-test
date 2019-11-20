@@ -2,3 +2,4 @@
 cd /home/ec2-user/react-app-test
 npm install
 npm run build
+serve -s build
