@@ -12,10 +12,6 @@ hooks:
     - location: scripts/npm-install.sh
       runas: root
       timeout: 3000
-  AfterInstall:
-    - location: scripts/npm-after-install.sh
-      runas: root
-      timeout: 3000
   ApplicationStart:
     - location: scripts/npm-start.sh
       runas: root

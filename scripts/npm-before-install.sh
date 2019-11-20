@@ -1,2 +1,2 @@
 #!/bin/bash
-npm install
+chmod 777 react-app-test
