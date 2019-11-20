@@ -5,6 +5,9 @@ files:
     destination: /home/ec2-user/react-app-test/
 hooks:
   AfterInstall:
-    - location: scripts/npm-install.sh
+    - location: old-scripts/npm-install.sh
+      runas: root
+      timeout: 300
+    - location: old-scripts/npm-start.sh
       runas: root
       timeout: 300
