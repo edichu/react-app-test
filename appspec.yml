@@ -4,10 +4,6 @@ files:
   - source: /
     destination: /home/ec2-user/react-app-test/
 hooks:
-  BeforeInstall:
-    - location: scripts/npm-before-install.sh
-      runas: root
-      timeout: 3000
   Install:
     - location: scripts/npm-install.sh
       runas: root
